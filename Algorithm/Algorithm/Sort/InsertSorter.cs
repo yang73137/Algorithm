@@ -5,7 +5,18 @@ using System.Text;
 
 namespace Algorithm.Sort
 {
-    class InsertSorter
+    public class InsertSorter : SorterBase
     {
+        protected override void SortCore<T>(T[] source)
+        {
+            var index = 1;
+            while (index < source.Length)
+            {
+                while (source[index] > source[index-1])
+                {
+                    
+                }
+            }
+        }
     }
 }
