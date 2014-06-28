@@ -12,10 +12,15 @@ namespace Algorithm.Sort
             var index = 1;
             while (index < source.Length)
             {
-                while (source[index] > source[index-1])
+                var currentIndex = index;
+                while (currentIndex > 0 && source[currentIndex].CompareTo(source[currentIndex - 1]) < 0)
                 {
-                    
+                    var temp = source[currentIndex];
+                    source[currentIndex] = source[currentIndex - 1];
+                    source[currentIndex - 1] = temp;
+                    currentIndex--;
                 }
+                index++;
             }
         }
     }
