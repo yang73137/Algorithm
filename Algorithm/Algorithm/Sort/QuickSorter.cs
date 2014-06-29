@@ -23,7 +23,7 @@ namespace Algorithm.Sort
             var pivot = source[left];
             while (left < right)
             {
-                while (left < right && source[right].CompareTo(pivot) >= 0)
+                while (left < right &&  source[right].CompareTo(pivot) >= 0)
                 {
                     right--;
                 }

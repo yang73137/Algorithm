@@ -12,7 +12,7 @@ namespace Algorithm.Sort
 
         public virtual void OnBeforeSort<T>(T[] source)
         {
-            Console.WriteLine("Before: {0}", string.Join(",", source));
+            Console.WriteLine("Before {0}: {1}", this.GetType().ToString(), string.Join(",", source));
             if (this.BeforeSortEvent != null)
             {
                 this.BeforeSortEvent(this, new SortEventArgs<T>(source));
@@ -21,7 +21,7 @@ namespace Algorithm.Sort
 
         public virtual void OnAfterSort<T>(T[] source)
         {
-            Console.WriteLine("After: {0}", string.Join(",", source));
+            Console.WriteLine("After {0}: {1}", this.GetType().ToString(), string.Join(",", source));
             if (this.AfterSortEvent != null)
             {
                 this.AfterSortEvent(this, new SortEventArgs<T>(source));

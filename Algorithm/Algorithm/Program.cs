@@ -16,11 +16,13 @@ namespace Algorithm
             var selectSorter = new SelectSorter();
             var insertSorter = new InsertSorter();
             var quickSorter = new QuickSorter();
+            var shellSorter = new ShellSorter();
 
             bubbleSorter.Sort(CopyArray(arr));
             selectSorter.Sort(CopyArray(arr));
             insertSorter.Sort(CopyArray(arr));
             quickSorter.Sort(CopyArray(arr));
+            shellSorter.Sort(CopyArray(arr));
 
             Console.ReadLine();
         }
