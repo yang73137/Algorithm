@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Algorithm.Search;
 using Algorithm.Sort;
 
 namespace Algorithm
@@ -23,6 +24,12 @@ namespace Algorithm
             insertSorter.Sort(CopyArray(arr));
             quickSorter.Sort(CopyArray(arr));
             shellSorter.Sort(CopyArray(arr));
+
+            var sequenceSearcher = new SequenceSearcher();
+            Console.WriteLine(sequenceSearcher.Find(arr, 1));
+
+            var binarySearcher = new BinarySearcher();
+            Console.WriteLine(binarySearcher.Find(new []{ 1, 2, 3, 4, 5 }, 1));
 
             Console.ReadLine();
         }

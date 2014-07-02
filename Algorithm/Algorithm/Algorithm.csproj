@@ -43,6 +43,10 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Search\BinarySearcher.cs" />
+    <Compile Include="Search\ISearcher.cs" />
+    <Compile Include="Search\SearcherBase.cs" />
+    <Compile Include="Search\SequenceSeacher.cs" />
     <Compile Include="Sort\BubbleSorter.cs" />
     <Compile Include="Sort\InsertSorter.cs" />
     <Compile Include="Sort\ISorter.cs" />
