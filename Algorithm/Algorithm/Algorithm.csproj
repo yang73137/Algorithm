@@ -50,10 +50,12 @@
     <Compile Include="Sort\BubbleSorter.cs" />
     <Compile Include="Sort\InsertSorter.cs" />
     <Compile Include="Sort\ISorter.cs" />
+    <Compile Include="Sort\MergeSorter.cs" />
     <Compile Include="Sort\QuickSorter.cs" />
     <Compile Include="Sort\SelectSorter.cs" />
     <Compile Include="Sort\ShellSorter.cs" />
     <Compile Include="Sort\SorterBase.cs" />
+    <Compile Include="Struct\BinaryTree.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
