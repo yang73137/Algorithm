@@ -18,12 +18,14 @@ namespace Algorithm
             var insertSorter = new InsertSorter();
             var quickSorter = new QuickSorter();
             var shellSorter = new ShellSorter();
+            var healSorter = new HeapSorter();
 
             bubbleSorter.Sort(CopyArray(arr));
             selectSorter.Sort(CopyArray(arr));
             insertSorter.Sort(CopyArray(arr));
             quickSorter.Sort(CopyArray(arr));
             shellSorter.Sort(CopyArray(arr));
+            healSorter.Sort(CopyArray(arr));
 
             var sequenceSearcher = new SequenceSearcher();
             Console.WriteLine(sequenceSearcher.Find(arr, 1));
@@ -32,6 +34,7 @@ namespace Algorithm
             Console.WriteLine(binarySearcher.Find(new []{ 1, 2, 3, 4, 5 }, 1));
 
             Console.ReadLine();
+            
         }
 
         static T[] CopyArray<T>(T[] source)

@@ -48,6 +48,7 @@
     <Compile Include="Search\SearcherBase.cs" />
     <Compile Include="Search\SequenceSeacher.cs" />
     <Compile Include="Sort\BubbleSorter.cs" />
+    <Compile Include="Sort\HeapSorter.cs" />
     <Compile Include="Sort\InsertSorter.cs" />
     <Compile Include="Sort\ISorter.cs" />
     <Compile Include="Sort\MergeSorter.cs" />
